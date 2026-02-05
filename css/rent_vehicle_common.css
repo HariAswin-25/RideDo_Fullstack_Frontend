@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.brand {
+  font-size: 38px;
+  font-weight: 700;
+  color: #4b47ff;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #4b47ff;
+}
+
+.logout {
+  color: red;
+}
+
+
+/* Section */
+.vehicle-section {
+  text-align: center;
+  padding: 50px 5%;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 35px;
+}
+
+/* Cards */
+.vehicle-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.vehicle-card {
+  width: 260px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+}
+
+.vehicle-img {
+  width: 130px;
+  margin-bottom: 15px;
+}
+
+.vehicle-card h3 {
+  margin-bottom: 8px;
+}
+
+.vehicle-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Button */
+.rent-btn {
+  margin-top: 10px;
+  background: #4b47ff;
+  color: #fff;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.rent-btn:hover {
+  background: #3732d3;
+}
+
+.rent-btn.disabled {
+  background: gray;
+  cursor: not-allowed;
+}

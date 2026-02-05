@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>RideDo | Book Cab</title>
+    <link rel="stylesheet" href="../css/bookcab.css">
+  </head>
+  <body>
+
+    <header class="navbar">
+      <div class="left">
+        <img src="../assets/logo.png" alt="RideDo Logo" class="logo">
+        <span class="brand">RideDo</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="../landingpage.html">Home</a>
+        <a href="./bookcab.html" class="active">Book Cab</a>
+        <a href="./driverlist.html">Hire Driver</a>
+        <a href="./rent_car.html">Self Drive Car</a>
+        <a href="./rent_bike.html">Rental Bike</a>
+        <a href="./user_profile.html">My Profile</a>
+        <a href="../index.html" class="logout">Logout</a>
+      </nav>
+    </header>
+
+  <section class="book-container">
+    <div class="book-box">
+      <h2>Book a Cab</h2>
+      <p>Book your ride in a few steps</p>
+
+      <form action="cab_confirmation.html">
+
+        <label>Pickup Location</label>
+        <input type="text" required>
+
+        <label>Destination</label>
+        <input type="text" required>
+
+        <label>Phone Number</label>
+        <input type="tel" pattern="[0-9]{10}" maxlength="10" required>
+
+        <label>Cab Type</label>
+        <select required>
+          <option value="">Select cab</option>
+          <option>Economy</option>
+          <option>Premium</option>
+          <option>Luxury</option>
+        </select>
+
+        <div class="row">
+          <div class="field">
+            <label>Date</label>
+            <input type="date" required>
+          </div>
+
+          <div class="field">
+            <label>Time</label>
+            <input type="time" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Confirm Booking</button>
+
+      </form>
+    </div>
+  </section>
+
+  </body>
+  </html>

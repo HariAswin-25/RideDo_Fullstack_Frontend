@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RideDo | Driver Sign Up</title>
+  <link rel="stylesheet" href="../css/driver_signup.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="left">
+    <img src="../assets/logo.png" class="logo">
+    <span class="brand">RideDo</span>
+  </div>
+</header>
+
+<section class="signup-section">
+  <div class="signup-card">
+    <h2>Driver Sign Up</h2>
+    <p class="subtitle">Cab Driver / Hire Driver</p>
+
+    <form action="driver_dashboard.html">
+
+      <label>Profile Photo</label>
+      <input type="file" accept="image/*" required>
+
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter full name" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter email" required>
+
+      <label>Phone Number</label>
+      <input 
+        type="tel"
+        placeholder="10-digit mobile number"
+        pattern="[0-9]{10}"
+        maxlength="10"
+        required
+      >
+
+      <label>Password</label>
+      <input type="password" placeholder="Create password" required>
+
+      <label>Driving Experience (Years)</label>
+      <input type="number" min="0" placeholder="Eg: 5" required>
+
+      <label>Driver Type</label>
+      <select required>
+        <option value="">Select type</option>
+        <option value="cab">Cab Driver</option>
+        <option value="hire">Hire Driver</option>
+      </select>
+
+      <button type="submit" class="btn">
+        Create Account
+      </button>
+
+      <p class="login-link">
+        Already have an account?
+        <a href="./driver_login.html">Login</a>
+      </p>
+
+    </form>
+  </div>
+</section>
+
+</body>
+</html>

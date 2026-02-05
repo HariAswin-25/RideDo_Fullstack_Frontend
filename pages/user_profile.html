@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RideDo | My Profile</title>
+  <link rel="stylesheet" href="../css/user_profile.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="left">
+    <img src="../assets/logo.png" class="logo">
+    <span class="brand">RideDo</span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="../landingpage.html">Home</a>
+    <a href="./bookcab.html">Book Cab</a>
+    <a href="./driverlist.html">Hire Driver</a>
+    <a href="./rent_car.html">Self Drive Car</a>
+    <a href="./rent_bike.html">Rental Bike</a>
+    <a href="./user_profile.html" class="active">My Profile</a>
+    <a href="../index.html" class="logout">Logout</a>
+  </nav>
+</header>
+
+<section class="profile-section">
+  <div class="profile-card">
+
+    <h2>My Profile</h2>
+    <p class="subtitle">View and update your personal details</p>
+
+<form>
+
+  <label>Full Name</label>
+  <input type="text" placeholder="Enter your name" value="Hari Aswin" required>
+
+  <label>Email Address</label>
+  <input type="email" placeholder="Enter email" value="hari@example.com" required>
+
+  <label>Phone Number</label>
+  <input type="tel"
+         pattern="[0-9]{10}"
+         maxlength="10"
+         placeholder="10-digit mobile number"
+         value="9876543210"
+         required>
+
+  <label>Date of Birth</label>
+  <input type="date" required>
+
+  <label>Current Password</label>
+  <input
+    type="password"
+    placeholder="Enter your current password"
+    required
+  >
+
+  <button type="submit" class="btn">
+    Update Profile
+  </button>
+
+</form>
+
+
+  </div>
+</section>
+
+</body>
+</html>
