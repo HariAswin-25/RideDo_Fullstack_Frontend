@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RideDo | Driver Dashboard</title>
-  <link rel="stylesheet" href="../css/driver_dashboard.css">
+  <title>RideDo | Cab Driver Dashboard</title>
+  <link rel="stylesheet" href="../css/cab_driver_dashboard.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <header class="navbar">
   <div class="left">
-    <img src="../assets/logo.png" class="logo" alt="RideDo">
+    <img src="../assets/logo.png" class="logo">
     <span class="brand">RideDo</span>
   </div>
 
@@ -25,20 +25,22 @@
 <!-- DASHBOARD -->
 <section class="dashboard">
 
-  <h2>Driver Dashboard</h2>
-  <p class="subtitle">Complete your driver verification details</p>
+  <h2>Cab Driver Dashboard</h2>
+  <p class="subtitle">Complete your cab and driver details</p>
 
   <div class="card">
+
     <form>
 
+      <!-- DRIVER DETAILS -->
       <div class="section">
-        <h3>Driver Verification</h3>
+        <h3>Driver Details</h3>
 
         <label>Driving License Number</label>
         <input type="text" placeholder="Enter license number" required>
 
         <label>Driving Experience (Years)</label>
-        <input type="number" min="0" placeholder="Eg: 3" required>
+        <input type="number" min="0" placeholder="Eg: 5" required>
 
         <label>License Photo</label>
         <input type="file" accept="image/*" required>
@@ -47,11 +49,35 @@
         <input type="file" accept="image/*" required>
       </div>
 
+      <!-- CAB DETAILS -->
+      <div class="section">
+        <h3>Cab Details</h3>
+
+        <label>Cab Number</label>
+        <input type="text" placeholder="TN 09 AB 1234" required>
+
+        <label>Vehicle Type</label>
+        <select required>
+          <option value="">Select vehicle type</option>
+          <option>Sedan</option>
+          <option>SUV</option>
+          <option>Hatchback</option>
+          <option>Auto</option>
+        </select>
+
+        <label>RC Book</label>
+        <input type="file" required>
+
+        <label>Insurance Document</label>
+        <input type="file" required>
+      </div>
+
       <button type="submit" class="btn">
         Save & Complete Profile
       </button>
 
     </form>
+
   </div>
 
 </section>

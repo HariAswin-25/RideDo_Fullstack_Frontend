@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RideDo | Rental Provider Dashboard</title>
+  <link rel="stylesheet" href="../css/rental_provider_dashboard.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="left">
+    <img src="../assets/logo.png" class="logo" alt="RideDo">
+    <span class="brand">RideDo</span>
+  </div>
+
+  <nav class="nav-links">
+    <a href="#">Dashboard</a>
+    <a href="#">My Business</a>
+    <a href="../index.html">Logout</a>
+  </nav>
+</header>
+
+<!-- DASHBOARD -->
+<section class="dashboard">
+
+  <h2>Rental Provider Dashboard</h2>
+  <p class="subtitle">Complete your business and vehicle details</p>
+
+  <div class="card">
+    <form>
+
+      <!-- BUSINESS DETAILS -->
+      <div class="section">
+        <h3>Business Details</h3>
+
+        <label>Provider / Company Name</label>
+        <input type="text" placeholder="Enter provider name" required>
+
+        <label>Number of Vehicles</label>
+        <input type="number" min="1" placeholder="Eg: 10" required>
+      </div>
+
+      <!-- VEHICLE DETAILS -->
+      <div class="section">
+        <h3>Vehicle Details</h3>
+
+        <label>Vehicle Type</label>
+        <input type="text" placeholder="Sedan / SUV / Auto" required>
+
+        <label>Vehicle Photos</label>
+        <input type="file" multiple required>
+
+        <label>RC Documents</label>
+        <input type="file" required>
+      </div>
+
+      <button type="submit" class="btn">
+        Save & Complete Profile
+      </button>
+
+    </form>
+  </div>
+
+</section>
+
+</body>
+</html>
