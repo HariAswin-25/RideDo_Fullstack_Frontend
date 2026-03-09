@@ -29,34 +29,34 @@
       <h2>Book a Cab</h2>
       <p>Book your ride in a few steps</p>
 
-      <form action="cab_confirmation.html">
+      <form id="bookingForm">
 
         <label>Pickup Location</label>
-        <input type="text" required>
+        <input type="text" id="pickup" required>
 
         <label>Destination</label>
-        <input type="text" required>
+        <input type="text" id="destination" required>
 
         <label>Phone Number</label>
-        <input type="tel" pattern="[0-9]{10}" maxlength="10" required>
+        <input type="tel" id="user_phone" pattern="[0-9]{10}" maxlength="10" required>
 
         <label>Cab Type</label>
-        <select required>
+        <select id="cab_type" required>
           <option value="">Select cab</option>
-          <option>Economy</option>
-          <option>Premium</option>
-          <option>Luxury</option>
+          <option value="Economy">Economy</option>
+          <option value="Premium">Premium</option>
+          <option value="Luxury">Luxury</option>
         </select>
 
         <div class="row">
           <div class="field">
             <label>Date</label>
-            <input type="date" required>
+            <input type="date" id="date" required>
           </div>
 
           <div class="field">
             <label>Time</label>
-            <input type="time" required>
+            <input type="time" id="time" required>
           </div>
         </div>
 
@@ -65,6 +65,9 @@
       </form>
     </div>
   </section>
+
+  <script src="../JS/api.js"></script>
+  <script src="../JS/booking.js"></script>
 
   </body>
   </html>

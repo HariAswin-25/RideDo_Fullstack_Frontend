@@ -34,14 +34,15 @@
     <h2>Rent a Vehicle</h2>
     <p class="subtitle">Choose your pickup location and time</p>
 
-    <form action="./rent_confirmation.html">
+    <form id="rentalForm">
 
       <label>Pickup Location</label>
-      <input type="text" placeholder="Enter pickup point" required>
+      <input type="text" id="pickup" placeholder="Enter pickup point" required>
 
       <label>Phone Number</label>
       <input
         type="tel"
+        id="phone"
         placeholder="Enter 10-digit mobile number"
         pattern="[0-9]{10}"
         maxlength="10"
@@ -51,6 +52,7 @@
       <label>Driving License Number</label>
       <input
         type="text"
+        id="license"
         placeholder="Enter license number"
         required
       >
@@ -58,22 +60,22 @@
       <div class="date-time">
         <div>
           <label>Pickup Date</label>
-          <input type="date" required>
+          <input type="date" id="pickup_date" required>
         </div>
         <div>
           <label>Pickup Time</label>
-          <input type="time" required>
+          <input type="time" id="pickup_time" required>
         </div>
       </div>
 
       <div class="date-time">
         <div>
           <label>Return Date</label>
-          <input type="date" required>
+          <input type="date" id="return_date" required>
         </div>
         <div>
           <label>Return Time</label>
-          <input type="time" required>
+          <input type="time" id="return_time" required>
         </div>
       </div>
 
@@ -84,6 +86,9 @@
     </form>
   </div>
 </section>
+
+<script src="../JS/api.js"></script>
+<script src="../JS/rentals.js"></script>
 
 </body>
 </html>

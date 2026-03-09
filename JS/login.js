@@ -21,8 +21,7 @@ document.getElementById("loginForm").addEventListener("submit", async function (
 
         if (response.ok) {
             alert("Login successful!");
-            // Store user info or token if needed
-            // localStorage.setItem("user", JSON.stringify(result.user)); 
+            localStorage.setItem("user_id", result.id);
             window.location.href = "../landingpage.html";
         } else {
             if (typeof result.detail === "string") {

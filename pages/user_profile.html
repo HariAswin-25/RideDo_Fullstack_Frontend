@@ -31,28 +31,29 @@
     <h2>My Profile</h2>
     <p class="subtitle">View and update your personal details</p>
 
-<form>
+<form id="profileForm">
 
   <label>Full Name</label>
-  <input type="text" placeholder="Enter your name" value="Hari Aswin" required>
+  <input type="text" id="full_name" placeholder="Enter your name" required>
 
   <label>Email Address</label>
-  <input type="email" placeholder="Enter email" value="hari@example.com" required>
+  <input type="email" id="email" placeholder="Enter email" required>
 
   <label>Phone Number</label>
   <input type="tel"
+         id="phone"
          pattern="[0-9]{10}"
          maxlength="10"
          placeholder="10-digit mobile number"
-         value="9876543210"
          required>
 
   <label>Date of Birth</label>
-  <input type="date" required>
+  <input type="date" id="dob" required>
 
   <label>Current Password</label>
   <input
     type="password"
+    id="password"
     placeholder="Enter your current password"
     required
   >
@@ -62,6 +63,9 @@
   </button>
 
 </form>
+
+<script src="../JS/api.js"></script>
+<script src="../JS/profile.js"></script>
 
 
   </div>

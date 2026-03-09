@@ -3,6 +3,7 @@ document.getElementById("signupForm").addEventListener("submit", async function 
 
     const full_name = document.querySelector("input[name='full_name']").value;
     const email = document.querySelector("input[name='email']").value;
+    const phone = document.querySelector("input[name='phone']").value;
     const dob = document.querySelector("input[name='dob']").value;
     const password = document.getElementById("password").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
@@ -19,10 +20,12 @@ document.getElementById("signupForm").addEventListener("submit", async function 
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                full_name,
-                email,
-                dob,
-                password
+                full_name: full_name,
+                email: email,
+                phone: phone,
+                dob: dob,
+                password: password,
+                confirm_password: confirmPassword
             })
         });
 
